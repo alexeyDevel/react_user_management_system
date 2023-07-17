@@ -1,0 +1,55 @@
+@import '@/global.scss';
+
+.header-our-team{
+    &__title{
+        font-size: 64px;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+    &__text{
+        font-size: 20px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    background-color: $primary-color;
+    font-weight: 400;
+    color: $white-color;
+    padding-bottom: 64px;
+    margin-top: -1px;
+}   
+ .btn-second{
+    border-radius: 8px;
+    border: 1px solid $black-color;
+    display: flex;
+    align-items: center;
+    margin: 48px auto 0;
+    & svg{
+        margin-left: 5px;
+    }
+}
+@media (max-width: 850px) {
+    .header-our-team{
+        &__title{
+            font-size: 46px;
+        }
+        &__text{
+            font-size: 18px;
+            max-width: 100%;
+            padding: 0 20px;
+        }
+    }   
+}
+@media (max-width: 576px) {
+    .header-our-team{
+        &__title{
+            font-size: 36px;
+        }
+        &__text{
+            font-size: 16px;
+            max-width: 100%;
+            text-align: center;
+            padding: 0 10px;
+        }
+    }   
+}

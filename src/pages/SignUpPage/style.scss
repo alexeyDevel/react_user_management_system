@@ -1,0 +1,32 @@
+@import '@/global.scss';
+
+.sing-up__form{
+    display: flex;
+    width: 500px;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: $white-color;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .sing-up__title{
+        text-align: left;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    .btn-main{
+        margin-top: 16px;
+        padding: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .sing-up__form{
+        width: 100%;
+    }
+}

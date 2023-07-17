@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+$primary-color: #512689;
+$black-color: #151317;
+$gray-color: #808185;
+$gray-light-color: #F8F8F8;
+$white-color: #FFF;
+$error-color: #FF6161;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+h2{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+a{
+  color: $black-color;
+}
+.btn{
+  padding: 8px;
+  font-size: 16px;
+} 
+.btn-main{
+  background-color: $primary-color;
+  color: $white-color;
+  width: 100%;
+  border-radius: 8px;
+}
+$container-sizes: (
+  xs: 540px,
+  sm: 720px,
+  md: 960px,
+  lg: 1140px,
+  xl: 1320px
+);
+
+@mixin container($size) {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: map-get($container-sizes, $size);
+}
+
+.container {
+  @include container(xs);
+
+  @media (min-width: 576px) {
+    @include container(sm);
+  }
+
+  @media (min-width: 768px) {
+    @include container(md);
+  }
+
+  @media (min-width: 992px) {
+    @include container(lg);
+  }
+  @media (min-width: 1200px) {
+    @include container(xl);
+  }
+}

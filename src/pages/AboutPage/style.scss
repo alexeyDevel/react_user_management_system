@@ -1,0 +1,64 @@
+@import '@/global.scss';
+
+.header-about-page{
+    .about-page-offer{
+        display: flex;
+        align-items: center;
+        color: $white-color;
+        .about-page-offer__image{
+            margin-right: 32px;
+            width: 187px;
+            height: 187px;
+            border-radius: 100px;
+            overflow: hidden;            
+            img{
+                width: 100%;
+            }
+        }
+        h1{
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+        .about-page-offer__text{
+            font-size: 32px;
+        }
+    }
+    .container {
+        padding-left: 100px;
+        padding-bottom: 40px;
+    }
+
+    margin-top: -35px;
+    background-color: $primary-color;
+}
+.info-section{
+    padding-top: 50px;
+    .container{
+        padding: 0 100px;
+    }
+    .about-page-info{
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 992px) {
+            flex-direction: column-reverse;   
+        }
+        .about-page-info__text{
+            max-width: 630px;
+            font-size: 16px;
+            color: $black-color;
+        }
+        .about-page-info__contacts{
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            a{
+                display: flex;
+                text-align: center;
+                margin-bottom: 25px;
+                svg{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }    
+}
